@@ -73,7 +73,7 @@ def home(firstname):
     return '<h1>Hello {}, you are on the home page!</h1>'.format(firstname)
 ```
 
-we should also define another route with default value for our variable in cases that user don’t enter any value and requests home URL solely. We can also define the type of our variable as I set string for firstname. it means the first name should be string otherwise it will go through an error:
+we should also define another route with default value for our variable in cases that user don’t enter any value and requests home URL solely. We can also define the type of our variable as I set string for `firstname`. it means the first name should be string otherwise it will go through an error:
 
 ```python
 @app.route('/home', methods=['POST', 'GET'], defaults={'firstname' : 'Meissam'})
@@ -89,9 +89,11 @@ the output is:
 
 In addition to building the URL there are other ways of passing in data into the app. Next we’ll look at how to pass in data using a query string. First we should import request component from Flask:
 
+```
 from flask import Flask, jsonify, request
+```
 
-then I’ll create a route to handle getting data from a query string with request.args:
+then I’ll create a route to handle getting data from a query string with `request.args`:
 
 ```python
 @app.route('/query')
@@ -106,7 +108,7 @@ and the output would be:
 
 ## Request Form Data in Flask Route
 
-I would like to show you how you can have a form and how you can send its data to another route. In order to this I’ll create a route called myform and then submit its data to processform route. Please consider that like processing query string which we've learned above, this part also needs to import the "request" component and using request.form:
+I would like to show you how you can have a form and how you can send its data to another route. In order to this I’ll create a route called myform and then submit its data to `processform` route. Please consider that like processing query string which we've learned above, this part also needs to import the "request" component and using `request.form`:
 
 ```python
 @app.route('/myform')
@@ -126,7 +128,7 @@ the result would be:
 ![Form Sample](./05.jpg)
 ![Form Output](./06.jpg)
 
-In above example we used processform to process our data. We can use the same route for both form presentation and processing data. We can do it by changing myform function and use a simple condition:
+In above example we used `processform` to process our data. We can use the same route for both form presentation and processing data. We can do it by changing `myform` function and use a simple condition:
 
 ```python
 @app.route('/myform', methods=['GET', 'POST'])
@@ -143,11 +145,11 @@ def myform():
          return '<h1>Hello {}. You are a/an {}. You have submitted the form successfully!<h1>'.format(firstname, job)
 ```
 
-Please consider that we changed the value of action attribute in form to myform. Although the mentioned pattern is handy, another pattern is to use to same route with different methods which I don't demonstrate it.
+Please consider that we changed the value of `action` attribute in form to `myform`. Although the mentioned pattern is handy, another pattern is to use to same route with different methods which I don't demonstrate it.
 
 ## Request JSON Data in Flask Route
 
-There’s one more way to pass request data to your flask app and that method is using Json object. I’m going to use jsonify and request components again. First I'll create a new route called processjson with POST method. Then we should use get_json method of request object:
+There’s one more way to pass request data to your flask app and that method is using Json object. I’m going to use `jsonify` and `request` components again. First I'll create a new route called `processjson` with POST method. Then we should use `get_json` method of request object:
 
 ```python
 @app.route('/processjson', methods=['POST'])
@@ -165,11 +167,13 @@ def processjson():
 To demonstrate the output I’ll use Postman to create a request to my app:
 ![Rquest Json](./07.jpg)
 
-## Redirects and url_for in Flask Route
+## Redirects and `url_for` in Flask Route
 
-Oftentimes in a web application you’ll want to redirect a user to another location once they’re done something. An example would be after user logs in. You can redirect them to the page that they were at before they logged in. You can redirect them to the home page or you can redirect them to an account dashboard. In order to this we should first import redirect and url_for components from Flask:
+Oftentimes in a web application you’ll want to redirect a user to another location once they’re done something. An example would be after user logs in. You can redirect them to the page that they were at before they logged in. You can redirect them to the home page or you can redirect them to an account dashboard. In order to this we should first import redirect and `url_for` components from Flask:
 
-from flask import Flask, jsonify, request, url_for, redirect
+```
+from flask import Flask, jsonify, request, url_for redirect
+```
 
 to show the application of these components I’ll make a little change to our form example:
 
