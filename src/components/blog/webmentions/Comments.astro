@@ -12,11 +12,11 @@ const { mentions } = Astro.props;
 const validComments = ["mention-of", "in-reply-to"];
 
 const comments = mentions.filter(
-	(mention) => validComments.includes(mention["wm-property"]) && mention.content?.text,
+	(mention) => validComments.includes(mention["wm-property"]) && mention.content?.text
 );
 
 /**
- ! show a link to the mention 
+ ! show a link to the mention
 
  */
 ---
@@ -74,7 +74,7 @@ const comments = mentions.filter(
 										aria-hidden="true"
 										class="h-5 w-5"
 										focusable="false"
-										name="mdi:open-in-new"
+										name="line-md:external-link"
 									/>
 								</a>
 							</div>
