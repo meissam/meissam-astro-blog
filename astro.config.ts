@@ -6,7 +6,7 @@ import expressiveCode from "astro-expressive-code";
 import icon from "astro-icon";
 import robotsTxt from "astro-robots-txt";
 import webmanifest from "astro-webmanifest";
-import { defineConfig } from "astro/config";
+import { defineConfig, passthroughImageService } from "astro/config";
 import { expressiveCodeOptions } from "./src/site.config";
 import { siteConfig } from "./src/site.config";
 
@@ -22,6 +22,7 @@ import rehypeExternalLinks from "rehype-external-links";
 // https://astro.build/config
 export default defineConfig({
 	image: {
+		service: passthroughImageService(),
 		domains: ["webmention.io"],
 	},
 	integrations: [
@@ -46,7 +47,7 @@ export default defineConfig({
 			// short_name: "Astro_Cactus",
 			description: siteConfig.description,
 			lang: siteConfig.lang,
-			icon: "public/icon.svg", // the source for generating favicon & icons
+			icon: "public/avatar.jpg", // the source for generating favicon & icons
 			icons: [
 				{
 					src: "icons/apple-touch-icon.png", // used in src/components/BaseHead.astro L:26

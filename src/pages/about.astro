@@ -1,6 +1,4 @@
 ---
-import { Image } from "astro:assets";
-import aboutImg from "@/assets/about-astro.png";
 import PageLayout from "@/layouts/Base.astro";
 
 const meta = {
@@ -12,36 +10,86 @@ const meta = {
 <PageLayout meta={meta}>
 	<div class="space-y-6">
 		<h1 class="title">About</h1>
+
+		<p>Hi. I'm Meissam, a software engineer living in Stockholm, Sweden.</p>
+
 		<p>
-			Hi, I’m a starter Astro. I’m particularly great for getting you started with your own blogging
-			website.
+			The story of this blog goes back to the years 2007-2008 in Iran, when I was a sophomore at
+			university. Having a website back then was quite a hassle. If you wanted to build a website
+			for yourself, you needed programming knowledge, which I didn't have at the time. I was a
+			software engineering student, but I wasn't very knowledgeable about web design and programming
+			yet. The cost of building and maintaining a website was also very high, and not everyone could
+			afford it. However, blogging was very popular. You could find a lot of free blogging service
+			providers. If you knew a bit of English, you could even use Google's Blogger or WordPress.
 		</p>
-		<div class="flex justify-center">
-			<Image
-				alt="A cartoon cactus looking at the 'Astro.build' logo"
-				fetchpriority="high"
-				loading="eager"
-				src={aboutImg}
-			/>
-		</div>
-		<p>Here are my some of my awesome built in features:</p>
-		<ul class="list-inside list-disc">
-			<li>I'm ultra fast as I'm a static site</li>
-			<li>I'm fully responsive</li>
-			<li>I come with a light and dark mode</li>
-			<li>I'm easy to customise and add additional content</li>
-			<li>I have Tailwind CSS styling</li>
-			<li>Shiki code syntax highlighting</li>
-			<li>Satori for auto generating OG images for blog posts</li>
-		</ul>
+
 		<p>
-			Clone or fork my <a
-				aria-label="github repository"
-				class="cactus-link inline-block"
-				href="https://github.com/chrismwilliams/astro-cactus"
-				rel="noreferrer"
-				target="_blank">repo</a
-			> if you like me!
+			You could always find bloggers who, after much effort and with dial-up internet or the early
+			and expensive 128kbps ADSL, tried to produce original / pure content. But please don't confuse
+			the old bloggers with today's Instagram and TikTok bloggers. If time permits, I'll try to
+			write a separate post explaining the difference between the bloggers of those days and
+			today's.
 		</p>
+
+		<p>
+			Let's go back to the story of my blog and where it started. My first eperience in creating a
+			blog was the one I made for my father. A user account on PersianBlog and that was it.
+		</p>
+
+		<p>
+			We started posting content on it. One of my interests was finding themes for the blog from
+			among all the themes available. I'd go to Photoshop and create some headers and graphic
+			assets. I had just learned that with a few lines of code, I could change the size and layout
+			of fonts. Moreover, I learned that I could use some ready-made scripts to count the number of
+			visits. Really funny 😋. Although, Due to censorship, PersianBlog deleted that blog without
+			any prior notice and didn't even give us a chance to back up our posts. It was sad but good
+			experience.
+		</p>
+
+		<p>
+			I should admit that I wasn't into books until my university years. One of my university
+			friends introduced me to "I'm OK, You're OK" by Thomas Harris, translated by Esmaeil Fasih.
+			Back in those days, nothing could help me as much as that book. This book was the beginning of
+			my interest in reading. With each book I read, my thirst for reading new books grew. This is
+			when the idea of creating my own blog came to mind.
+		</p>
+
+		<p>
+			I wanted to put summaries of everything I read in one place, hoping it might be useful to
+			someone else in the world. So I didn't hesitate and created my first blog. With the bad
+			experience I had with PersianBlog, this time I turned to MihanBlog, another blogging platform
+			in Iran. A user account and that was it.
+		</p>
+
+		<p>
+			Unfortunately, my blog faced the same fate as my father's blog. Fortunately, MihanBlog allowed
+			me to back up the blog before it was deleted.
+		</p>
+
+		<p>
+			Now, years have passed since those days and I still have my blog. But now I'm a software
+			engineer and have learned how to set up my blog in different ways. The code for this blog is
+			all hosted on GitHub and is open-source. Whenever I add a post to my blog, it is automatically
+			published on a free server, and you can read it. I'm no longer worried about unexpected
+			deletions and am fairly confident (to some extent) that
+			<a
+				class="cactus-link"
+				href="https://archiveprogram.github.com/arctic-vault/"
+				target="_blank"
+				title="Arctic Code Vault"
+			>
+				Microsoft has backed up these writings deep in a mountain in the Arctic.
+			</a>
+			They said those backups are built and equipped to last for thousands of years. So, I can hope that
+			the writings of this blog will be preserved for thousands of years. Maybe you'll come across them
+			one day and enjoy them, making it a topic for a <a
+				href="https://visitsweden.com/what-to-do/food-drink/swedish-kitchen/all-about-swedish-fika/"
+				target="_blank"
+				class="cactus-link"
+				title="Fika like a Swede">fika!</a
+			> ☕️🍪.
+		</p>
+
+		<p>Regards, Meissam</p>
 	</div>
 </PageLayout>
