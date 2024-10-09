@@ -2,6 +2,8 @@
 import { menuLinks } from "@/site-config";
 import Search from "../Search.astro";
 import ThemeToggle from "../ThemeToggle.astro";
+import { Image } from "astro:assets";
+import Avatar from "@/assets/avatar.jpg";
 
 const url = new URL(Astro.request.url);
 ---
@@ -13,8 +15,9 @@ const url = new URL(Astro.request.url);
 			class="inline-flex items-center grayscale hover:filter-none sm:relative sm:inline-block"
 			href="/"
 		>
-			<img
-				src="/avatar.jpg"
+			<Image
+				src={Avatar}
+				loading="eager"
 				alt="Meissam Rasouli Logo"
 				aria-label="Meissam Rasouli Logo"
 				role="img"
