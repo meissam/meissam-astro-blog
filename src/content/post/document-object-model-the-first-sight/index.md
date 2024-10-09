@@ -2,7 +2,7 @@
 title: "Document Object Model (DOM); The First Sight"
 description: "Unpacking the core concept of the web—the DOM. Dive into how JavaScript interacts with HTML, making it a crucial skill for web developers."
 publishDate: "06 September 2018"
-tags: ["software-engineering"]
+tags: ["JavaScript", "HTML"]
 ---
 
 I’m going to write about one of the core concepts of the web: the DOM. Whether you’re brand-new to JavaScript or have been working with it for a while, this paper is worth a read. We’ll understand the Document Object Model (DOM). Those who have spent several years working with JavaScript know that mastering the DOM is the single most important skill for a web programmer. But what is the DOM? Is it a language, part of JavaScript? What exactly is it? When you google the term DOM, you find phrases like, “The Document Object Model is an application programming interface that defines the logical structure of well-formed XML and HTML documents,” which doesn’t help most people, but it’s quite a simple idea.
