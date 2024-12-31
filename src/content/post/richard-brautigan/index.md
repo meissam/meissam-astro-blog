@@ -4,7 +4,7 @@ description: "I've always liked Richard Brautigan. Not because of his hat, thoug
 publishDate: "14 May 2016"
 coverImage:
   src: "./cover.jpg"
-  alt: "Astro build wallpaper"
+  alt: "Richard Brautigan"
 tags: ["perosnal-note"]
 ---
 
