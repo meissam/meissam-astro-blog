@@ -3,6 +3,7 @@ title: "Peace is warm bread on the world’s table"
 description: "This tale recounts a humorous and heartwarming memory from working in bookstrore, intertwined with the beautiful chaos of life, peace and kebab cravings."
 publishDate: "03 March 2016"
 tags: ["perosnal-note"]
+categories: ["perosnal-note"]
 ---
 
 Ardeshir Rostami and his dear wife had a bookstore named Kafshdoozak, located in Azimieh, Karaj. I loved that place. It might not have been a big bookstore, but most of the books there were chosen by Mr. Rostami himself. Because of this, you could always find a book worth reading. The first floor had books and stationery, and the second floor had handicrafts and music. The décor was done by Mr. Rostami himself, and you could see his works on the walls. Additionally, the outer wall of the bookstore was adorned with one of Yiannis Ritsos’ poems.
