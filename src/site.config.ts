@@ -31,21 +31,34 @@ export const menuLinks: { path: string; title: string }[] = [
 		path: "/",
 		title: "Home",
 	},
-	{
+
+  {
+		title: "Leadership",
+		path: "/categories/leadership",
+	},
+  {
+		title: "Software Engineering",
+		path: "/categories/software-engineering/",
+	},
+  {
+		title: "Personal Notes",
+		path: "/categories/personal-notes/",
+	}
+];
+
+// Used to generate links in both the Header & Footer.
+export const footerLinks: { path: string; title: string }[] = [
+  {
 		path: "/about/",
 		title: "About",
 	},
 	{
 		path: "/posts/",
-		title: "Blog",
+		title: "Archive",
 	},
   {
 		title: "Tags",
 		path: "/tags/",
-	},
-  {
-		title: "Categories",
-		path: "/categories/",
 	},
 ];
 

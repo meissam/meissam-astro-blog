@@ -3,7 +3,7 @@ title: "Flask Route — A Complete Overview"
 description: "A comprehensive guide to Flask routing, covering key concepts and practical examples to help developers master web application routes in Python."
 publishDate: "10 April 2020"
 tags: ["python", "flask"]
-categories: ["software-Engineering"]
+categories: ["software-engineering"]
 ---
 
 There are a wide array of Python web frameworks all around and Flask is one of them but we should consider that it is not a fullstack web framework. It is “a microframework for Python based on Werkzeug, Jinja 2.” Includes a built-in development server, unit testing support, and is fully Unicode-enabled with RESTful request dispatching and WSGI compliance.

@@ -12,7 +12,7 @@ const meta = {
 ---
 
 <PageLayout meta={meta}>
-	<h1 class="title mb-6">categories</h1>
+	<h1 class="title mb-6">Categories</h1>
 	<ul class="space-y-4">
 		{
 			allCategories.map(([category, val]) => (
@@ -23,7 +23,7 @@ const meta = {
 						href={`/categories/${category}/`}
 						title={`View posts with the category: ${category}`}
 					>
-						&#35;{category}
+						{category}
 					</a>
 					<span class="inline-block">
 						- {val} Post{val > 1 && "s"}

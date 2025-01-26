@@ -1,11 +1,28 @@
 import { type CollectionEntry, getCollection } from "astro:content";
 import { siteConfig } from "@/site-config";
 
+export enum Categories {
+  Leadership = 'leadership',
+  SoftwareEngineering = 'software-engineering',
+  PersonalNotes = 'personal-notes'
+}
+
 /** filter out draft posts based on the environment */
 export async function getAllPosts() {
 	return await getCollection("post", ({ data }) => {
 		return import.meta.env.PROD ? !data.draft : true;
 	});
+}
+
+/** filter out draft posts based on the environment and filter posts by category */
+export async function getPostsByCategory(category: string) {
+  return await getCollection("post", ({ data }) => {
+      const isProd = import.meta.env.PROD;
+      const isDraft = data.draft;
+      const isCategoryMatch = data.categories.includes(category);
+
+      return (isProd ? !isDraft : true) && isCategoryMatch;
+  });
 }
 
 /** returns the date of the post based on option in siteConfig.sortPostsByUpdatedDate */
