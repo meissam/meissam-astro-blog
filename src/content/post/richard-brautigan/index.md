@@ -6,7 +6,7 @@ coverImage:
   src: "./cover.jpg"
   alt: "Richard Brautigan"
 tags: ["richard-brautigan", "poet"]
-categories: ["personal-notes"]
+categories: ["life"]
 ---
 
 I've always liked Richard Brautigan. Not because of his hat, though I do like his hat a lot. Or maybe you think it's because of his mustache, which, to be honest, I wouldn't mind having myself. Or perhaps you think it's because of his tumultuous life and death. But it's none of these. I love Brautigan because of his writings. Whenever I read his works, I always felt like he was mocking me or making fun of me. After all, why would someone write something like this in their book:

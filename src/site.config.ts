@@ -1,6 +1,12 @@
 import type { SiteConfig } from "@/types";
 import type { AstroExpressiveCodeOptions } from "astro-expressive-code";
 
+export enum Categories {
+  Leadership = 'leadership',
+  Code = 'code',
+  Life = 'life'
+}
+
 export const siteConfig: SiteConfig = {
 	// Used as both a meta property (src/components/BaseHead.astro L:31 + L:49) & the generated satori png (src/pages/og-image/[slug].png.ts)
 	author: "Meissam Rasouli",
@@ -27,27 +33,26 @@ export const siteConfig: SiteConfig = {
 
 // Used to generate links in both the Header & Footer.
 export const menuLinks: { path: string; title: string }[] = [
-	{
-		path: "/",
-		title: "Home",
-	},
-
   {
-		title: "Leadership",
-		path: "/categories/leadership",
-	},
+    title: Categories.Leadership,
+    path: "/categories/leadership/",
+  },
   {
-		title: "Software Engineering",
-		path: "/categories/software-engineering/",
-	},
+    title: Categories.Code,
+    path: "/categories/code/",
+  },
   {
-		title: "Personal Notes",
-		path: "/categories/personal-notes/",
-	}
+    title: Categories.Life,
+    path: "/categories/life/",
+  }
 ];
 
 // Used to generate links in both the Header & Footer.
 export const footerLinks: { path: string; title: string }[] = [
+  {
+		path: "/",
+		title: "Home",
+	},
   {
 		path: "/about/",
 		title: "About",
@@ -59,6 +64,10 @@ export const footerLinks: { path: string; title: string }[] = [
   {
 		title: "Tags",
 		path: "/tags/",
+	},
+  {
+		title: "RSS",
+		path: "/rss.xml",
 	},
 ];
 

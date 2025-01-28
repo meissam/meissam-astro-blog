@@ -2,8 +2,8 @@
 title: "Object Oriented Programming — The Four Principles"
 description: "Going through the core principles of Object-Oriented Programming—encapsulation, inheritance, polymorphism, and abstraction."
 publishDate: "23 August 2019"
-tags: ["software-engineering", "oop"]
-categories: ["software-engineering"]
+tags: ["oop"]
+categories: ["code"]
 ---
 
 ## What is object-oriented programming?

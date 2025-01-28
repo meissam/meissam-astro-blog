@@ -1,7 +1,8 @@
 ---
 import SocialList from "@/components/SocialList.astro";
 import PostPreview from "@/components/blog/PostPreview.astro";
-import { sortMDByDate, getPostsByCategory, Categories } from "@/data/post";
+import { sortMDByDate, getPostsByCategory } from "@/data/post";
+import { Categories } from "@/site-config";
 import PageLayout from "@/layouts/Base.astro";
 
 const MAX_POSTS = 5;
@@ -9,12 +10,14 @@ const allLeadershipPosts = sortMDByDate(await getPostsByCategory(Categories.Lead
 	0,
 	MAX_POSTS
 );
-const allSoftwareEngineeringPosts = sortMDByDate(
-	await getPostsByCategory(Categories.SoftwareEngineering)
-).slice(0, MAX_POSTS);
-const allPersonalNotesPosts = sortMDByDate(
-	await getPostsByCategory(Categories.PersonalNotes)
-).slice(0, MAX_POSTS);
+const allSoftwareEngineeringPosts = sortMDByDate(await getPostsByCategory(Categories.Code)).slice(
+	0,
+	MAX_POSTS
+);
+const allPersonalNotesPosts = sortMDByDate(await getPostsByCategory(Categories.Life)).slice(
+	0,
+	MAX_POSTS
+);
 ---
 
 <PageLayout meta={{ title: "Home" }}>
@@ -28,7 +31,7 @@ const allPersonalNotesPosts = sortMDByDate(
 		<SocialList />
 	</section>
 	<section aria-label="Blog post list" class="mt-16">
-		<h2 class="title mb-4 text-xl">Leadership</h2>
+		<h2 class="title mb-4 text-xl capitalize">{Categories.Leadership}</h2>
 		<ul class="space-y-4">
 			{
 				allLeadershipPosts.map((p) => (
@@ -41,7 +44,7 @@ const allPersonalNotesPosts = sortMDByDate(
 		</ul>
 	</section>
 	<section aria-label="Blog post list" class="mt-16">
-		<h2 class="title mb-4 text-xl">Software Engineering</h2>
+		<h2 class="title mb-4 text-xl capitalize">{Categories.Code}</h2>
 		<ul class="space-y-4">
 			{
 				allSoftwareEngineeringPosts.map((p) => (
@@ -54,7 +57,7 @@ const allPersonalNotesPosts = sortMDByDate(
 		</ul>
 	</section>
 	<section aria-label="Blog post list" class="mt-16">
-		<h2 class="title mb-4 text-xl">Personal Notes</h2>
+		<h2 class="title mb-4 text-xl capitalize">{Categories.Life}</h2>
 		<ul class="space-y-4">
 			{
 				allPersonalNotesPosts.map((p) => (

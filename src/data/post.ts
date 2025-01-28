@@ -1,12 +1,6 @@
 import { type CollectionEntry, getCollection } from "astro:content";
 import { siteConfig } from "@/site-config";
 
-export enum Categories {
-  Leadership = 'leadership',
-  SoftwareEngineering = 'software-engineering',
-  PersonalNotes = 'personal-notes'
-}
-
 /** filter out draft posts based on the environment */
 export async function getAllPosts() {
 	return await getCollection("post", ({ data }) => {
