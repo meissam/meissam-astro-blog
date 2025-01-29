@@ -5,7 +5,7 @@ publishDate: "14 May 2016"
 coverImage:
   src: "./cover.jpg"
   alt: "Richard Brautigan"
-tags: ["richard-brautigan", "poet"]
+tags: ["richard-brautigan", "poet", "books-i-have-read"]
 categories: ["life"]
 ---
 
