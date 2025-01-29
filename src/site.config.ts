@@ -28,7 +28,7 @@ export const siteConfig: SiteConfig = {
 	// Option to sort posts by updatedDate if set to true (if property exists). Default (false) will sort by publishDate
 	sortPostsByUpdatedDate: false,
 	// Used to construct the meta title property found in src/components/BaseHead.astro L:11, and webmanifest name found in astro.config.ts L:42
-	title: "Personal website and blog"
+	title: "Meissam Rasouli's Personal blog"
 };
 
 // Used to generate links in both the Header & Footer.
