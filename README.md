@@ -8,4 +8,4 @@ This blog is based on the [Astro Cactus theme](https://github.com/chrismwilliams
 
 ## License
 
-© 2024 Meissam Rasouli. This project is licensed under the terms of
+MIT
