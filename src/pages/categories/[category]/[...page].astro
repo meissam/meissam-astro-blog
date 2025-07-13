@@ -24,7 +24,7 @@ interface Props {
 	page: Page<CollectionEntry<"post">>;
 }
 
-const { page } = Astro.props;
+const { page } = Astro.props as unknown as Props;
 const { category } = Astro.params;
 
 const meta = {

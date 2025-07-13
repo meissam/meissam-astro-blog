@@ -7,7 +7,7 @@ export enum Categories {
 }
 
 export const siteConfig: SiteConfig = {
-	// Used as both a meta property (src/components/BaseHead.astro L:31 + L:49) & the generated satori png (src/pages/og-image/[slug].png.ts)
+	// Used as both a meta property (src/components/BaseHead.astro L:31 + L:49)
 	author: "Meissam Rasouli",
 	// Date.prototype.toLocaleDateString() parameters, found in src/utils/date.ts.
 	date: {
