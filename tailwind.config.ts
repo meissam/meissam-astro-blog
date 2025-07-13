@@ -43,8 +43,8 @@ export default {
 			},
 			fontFamily: {
 				// Add any custom fonts here
-				sans: [...fontFamily.sans],
-				serif: [...fontFamily.serif],
+				sans: ["Sahel", ...fontFamily.sans],
+				serif: ["Sahel", ...fontFamily.serif],
 			},
 			transitionProperty: {
 				height: "height",
@@ -124,6 +124,24 @@ export default {
 						"--tw-prose-links": theme("colors.textColor / 1"),
 						"--tw-prose-quotes": theme("colors.quote / 1"),
 						"--tw-prose-th-borders": "#666",
+
+						blockquote: {
+							marginTop: "2rem",
+							marginBottom: "2rem",
+							paddingRight: "1.25rem",
+							borderRight: "3px solid hsl(var(--theme-quote))",
+							fontStyle: "italic",
+							color: "hsl(var(--theme-quote))",
+							textAlign: "right",
+						},
+						"blockquote p:first-of-type::before": {
+							content: '"“"',
+							marginLeft: "0.25rem",
+						},
+						"blockquote p:last-of-type::after": {
+							content: '"”"',
+							marginRight: "0.25rem",
+						},
 					},
 				},
 				sm: {

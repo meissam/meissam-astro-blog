@@ -1,6 +1,6 @@
 ---
-title: "Why do I like Richard Brautigan"
-description: "I've always liked Richard Brautigan. Not because of his hat, though I do like his hat a lot."
+title: "از ریچارد براتیگان"
+description: "همیشه ریچارد براتیگان را دوست داشتم. نه به خاطر کلاهش، که البته کلاهش را خیلی می‌پسندم. "
 publishDate: "14 May 2016"
 coverImage:
   src: "./cover.jpg"
@@ -9,31 +9,29 @@ tags: ["richard-brautigan", "poet", "books-i-have-read"]
 categories: ["life"]
 ---
 
-I've always liked Richard Brautigan. Not because of his hat, though I do like his hat a lot. Or maybe you think it's because of his mustache, which, to be honest, I wouldn't mind having myself. Or perhaps you think it's because of his tumultuous life and death. But it's none of these. I love Brautigan because of his writings. Whenever I read his works, I always felt like he was mocking me or making fun of me. After all, why would someone write something like this in their book:
+همیشه ریچارد براتیگان را دوست داشتم. نه به خاطر کلاهش، که البته کلاهش را خیلی می‌پسندم. یا شاید فکر کنید به خاطر سبیل‌هایش، که اگر دروغ نگویم بدم نمی‌آمد همچین سبیلی می‌داشتم. یا شاید بگویید به خاطر زندگی و البته مرگ پر فراز و نشیبش. اما هیچ کدام از اینها نیست. برایتگان را به خاطر نوشته‌هایش دوست داشتم. همیشه هر وقت آثارش را می‌خواندم، احساس می‌کردم، مرا دست انداخته است یا دارد مرا مسخره می‌کند. آخر چرا باید یک نفر در کتابش همچین چیزی بنویسد:
 
-> A little ways up from the shack was an outhouse with its door flung violently open. The inside of the outhouse was exposed like a human face and the outhouse seemed to say, "The old guy who built me crapped in here 9,745 times and he's dead now and I don't want anyone else to touch me. He was a good guy. He built me with loving care. Leave me alone. I'm a monument now to a good ass gone under. There's no mystery here. That's why the door's open. If you have to crap, go in the bushes like the deer."
-"Fuck you," I said to the outhouse. "All I want is a ride down the river.”
+> چند قدم آن طرف تر از کلبه مستراحی بود که درش به شکل فجیعی باز مانده بود. داخل مستراح جلوه ی یک صورت انسانی را داشت و انگار داشت می‌گفت: "اون پیرکی که منو ساخته 9745 بار اینجا ریده و حالا مرده و من دیگه نمیخوام کسی دستش به من برسه. اون آدم خوبی بود. منو با عشق و علاقه ساخت. تنهام بذار. من حالا یادگار اون ماتحت نازنینی ام که کلکش کنده شده. هیچ راز و رمزی هم اینجا نیست. برای همینه که در بازه. اگه ریدنت گرفته، مث گوزن برو لای بوته‌ها." به مستراح گفتم: "گور بابات. چیزی که من میخوام، همش یه ماشینه که ببردم پایین رود."
 
-That was from the book "Trout Fishing in America". Or for example this one which is from the book "Dreaming of Babylon":
+این از کتاب “صید قزل‌آلا در آمریکا ترجمه پیام یزدانجو” بود. یا مثلا:
 
-> First, the good news: I found out that I was 4F and wasn’t going off to World War II to be a soldier boy. I didn’t feel unpatriotic at all because I had fought my World War II five years before in Spain and had a couple of bullet holes in my ass to prove it.
-I’ll never figure out why I got shot in the ass. Anyway, it made a lousy war story. People don’t look up to you as a hero when you tell them you were shot in the ass. They don’t take you seriously but that wasn’t my problem any more at all. The war that was starting for the rest of America was over for me.
+> خبر خوب: فهمیدم مرا برای خدمت در نظام وظیفه «نامناسب» تشخیص داده‌اند و به‌عنوان بچه‌سرباز به جبهه‌ی جنگ جهانی دوم اعزام نمی‌شوم. مساله اصلا بی‌علاقگی به وطن نبود چون من جنگ جهانی دوم‌ام را پنج سال پیش در اسپانیا جنگیده بودم و یک جفت سوراخ گلوله هم در ماتحت‌ام داشتم که این را اثبات می‌کرد. اصلا سر در نمی‌آوردم چرا تیر به ماتحت‌ام خورد. به هر حال، یک داستان جنگی مزخرف بود. به مردم که می‌گویی ماتحت‌ات تیر خورده، دیگر تو را به چشم یک قهرمان نمی‌بینند. جدی‌ات نمی‌گیرند، اما این دیگر اصلا مساله‌ی من نبود. جنگی که برای باقی آمریکا داشت شروع می‌شد برای من تمام شده بود.
 
-Now you might have a sense of what I mean. I love the humor in his writings. It seems like nothing was important to this man. I don't know, maybe it was. But I don't think it was, because if it were, he wouldn't have ended his life at 49 with a .44 caliber hunting rifle while looking out at the ocean. I love Brautigan because he was a lovable madman.
+این یکی از کتاب “در رویای بابل ترجمه پیام یزدانجو” بود.
 
-Oh, I almost forgot to mention that Brautigan was also a very good poet. For now, here's one of his poems, and if I get the chance, I'll post more of his poems for you later.
+حالا شاید تا حدودی دستتان آمده باشد که منظورم چیست. این طنزی که در نوشته‌هایش هست را خیلی دوست دارم. انگار برای این آدم هیچ چیز مهم نبود. نمی‌دانم، شاید هم مهم بوده است. ولی به نظرم مهم نبود چون اگر بود خودش را در 49 سالگی با یک تفنگ شکاری کالیبر 44، در حالی که از پنجره به اقیانوس آرام نگاه می‌کرد، خلاص نمی‌کرد. براتیگان را به این خاطر دوست دارم چون یک دیوانه دوست داشتنی است.
 
-> Thinking hard about you
->
-> I got on the bus
->
-> and paid 30 cents car fare
->
-> and asked the driver for two transfers
->
-> before discovering
->
-> that I was
+راستی داشت یادم می‌رفت که براتیگان شاعر بسیار خوبی هم بود. عجالتاً این یک شعر را داشته باشید تا بعدا اگر فرصتی شد باز هم از او شعرهای دیگری هم برایتان پست کنم.
+
+هنگام سوار شدن اتوبوس
+
+شدیدا به تو فکر میکردم
+
+سی سنت کرایه را دادم
+
+گفتم دو نفر
+
+یادم نبود تنها هستم
 
 ---
 
