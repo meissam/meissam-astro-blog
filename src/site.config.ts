@@ -1,10 +1,9 @@
 import type { SiteConfig } from "@/types";
-import type { AstroExpressiveCodeOptions } from "astro-expressive-code";
 
 export enum Categories {
-  Leadership = 'leadership',
-  Code = 'code',
-  Life = 'life'
+	Leadership = "leadership",
+	Code = "code",
+	Life = "life",
 }
 
 export const siteConfig: SiteConfig = {
@@ -28,32 +27,32 @@ export const siteConfig: SiteConfig = {
 	// Option to sort posts by updatedDate if set to true (if property exists). Default (false) will sort by publishDate
 	sortPostsByUpdatedDate: false,
 	// Used to construct the meta title property found in src/components/BaseHead.astro L:11, and webmanifest name found in astro.config.ts L:42
-	title: "Meissam Rasouli's Personal blog"
+	title: "Meissam Rasouli's Personal blog",
 };
 
 // Used to generate links in both the Header & Footer.
 export const menuLinks: { path: string; title: string }[] = [
-  {
-    title: Categories.Leadership,
-    path: "/categories/leadership/",
-  },
-  {
-    title: Categories.Code,
-    path: "/categories/code/",
-  },
-  {
-    title: Categories.Life,
-    path: "/categories/life/",
-  }
+	{
+		title: Categories.Leadership,
+		path: "/categories/leadership/",
+	},
+	{
+		title: Categories.Code,
+		path: "/categories/code/",
+	},
+	{
+		title: Categories.Life,
+		path: "/categories/life/",
+	},
 ];
 
 // Used to generate links in both the Header & Footer.
 export const footerLinks: { path: string; title: string }[] = [
-  {
+	{
 		path: "/",
 		title: "Home",
 	},
-  {
+	{
 		path: "/about/",
 		title: "About",
 	},
@@ -61,42 +60,12 @@ export const footerLinks: { path: string; title: string }[] = [
 		path: "/posts/",
 		title: "Archive",
 	},
-  {
+	{
 		title: "Tags",
 		path: "/tags/",
 	},
-  {
+	{
 		title: "RSS",
 		path: "/rss.xml",
 	},
 ];
-
-// https://expressive-code.com/reference/configuration/
-export const expressiveCodeOptions: AstroExpressiveCodeOptions = {
-	styleOverrides: {
-		borderRadius: "4px",
-		codeFontFamily:
-			'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;',
-		codeFontSize: "0.875rem",
-		codeLineHeight: "1.7142857rem",
-		codePaddingInline: "1rem",
-		frames: {
-			frameBoxShadowCssValue: "none",
-		},
-		uiLineHeight: "inherit",
-	},
-	themeCssSelector(theme, { styleVariants }) {
-		// If one dark and one light theme are available
-		// generate theme CSS selectors compatible with cactus-theme dark mode switch
-		if (styleVariants.length >= 2) {
-			const baseTheme = styleVariants[0]?.theme;
-			const altTheme = styleVariants.find((v) => v.theme.type !== baseTheme?.type)?.theme;
-			if (theme === baseTheme || theme === altTheme) return `[data-theme='${theme.type}']`;
-		}
-		// return default selector
-		return `[data-theme="${theme.name}"]`;
-	},
-	// One dark, one light theme => https://expressive-code.com/guides/themes/#available-themes
-	themes: ["dracula", "github-light"],
-	useThemedScrollbars: false,
-};
