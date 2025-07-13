@@ -142,6 +142,10 @@ export default {
 							content: '"”"',
 							marginRight: "0.25rem",
 						},
+
+						img: {
+							borderRadius: "0.75rem",
+						},
 					},
 				},
 				sm: {
