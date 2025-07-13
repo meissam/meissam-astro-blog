@@ -40,6 +40,7 @@ export default {
 				link: "hsl(var(--theme-link) / <alpha-value>)",
 				quote: "hsl(var(--theme-quote) / <alpha-value>)",
 				textColor: "hsl(var(--theme-text) / <alpha-value>)",
+				header: "hsl(var(--header-bg) / <alpha-value>)",
 			},
 			fontFamily: {
 				// Add any custom fonts here
@@ -145,6 +146,13 @@ export default {
 
 						img: {
 							borderRadius: "0.75rem",
+						},
+
+						p: {
+							textAlign: "justify",
+						},
+						li: {
+							textAlign: "justify",
 						},
 					},
 				},

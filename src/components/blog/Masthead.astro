@@ -29,7 +29,7 @@ const dateTimeOptions: Intl.DateTimeFormatOptions = {
 		</div>
 	)
 }
-{data.draft ? <span class="text-base text-red-500">(Draft)</span> : null}
+{data.draft ? <span class="text-base text-red-500">( پیش‌نویس)</span> : null}
 <h1 class="title">
 	{data.title}
 </h1>
@@ -40,7 +40,7 @@ const dateTimeOptions: Intl.DateTimeFormatOptions = {
 	{
 		data.updatedDate && (
 			<span class="rounded-lg bg-quote/10 px-2 py-1 text-quote">
-				Updated:
+				به روز‌رسانی شده:
 				<FormattedDate class="ms-1" date={data.updatedDate} dateTimeOptions={dateTimeOptions} />
 			</span>
 		)
@@ -51,7 +51,7 @@ const dateTimeOptions: Intl.DateTimeFormatOptions = {
 		<div class="mt-2">
 			<svg
 				aria-hidden="true"
-				class="inline-block h-6 w-6"
+				class="inline-block h-5 w-5"
 				fill="none"
 				focusable="false"
 				stroke="currentColor"
@@ -67,16 +67,14 @@ const dateTimeOptions: Intl.DateTimeFormatOptions = {
 				<path d="M6 9h-.01" />
 			</svg>
 			{data.tags.map((tag) => (
-				<>
-					<a
-						aria-label={`View more blogs with the tag ${tag}`}
-						class="cactus-link inline-block text-xs"
-						data-pagefind-filter="tag"
-						href={`/tags/${tag}/`}
-					>
-						#{tag}
-					</a>
-				</>
+				<a
+					aria-label={`View more blogs with the tag ${tag}`}
+					class="cactus-link ml-3 inline-block text-sm"
+					data-pagefind-filter="tag"
+					href={`/tags/${tag}/`}
+				>
+					#{tag}
+				</a>
 			))}
 		</div>
 	)

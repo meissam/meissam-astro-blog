@@ -2,8 +2,8 @@
 title: "What Do Engineering Managers Do?"
 description: "Discover the key roles and responsibilities of engineering managers, and learn what it takes to transition from developer to leader in this essential guide."
 publishDate: "05 September 2024"
-tags: ["leadership","engineering-manager","people-management"]
-categories: ["leadership"]
+tags: ["leadership", "engineering-manager", "people-management"]
+categories: ["عکس"]
 ---
 
 In this post, I'll explore the core responsibilities of an engineering manager and what it truly means to transition into this pivotal role.

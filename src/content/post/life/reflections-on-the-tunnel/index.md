@@ -5,8 +5,8 @@ publishDate: "15 June 2012"
 coverImage:
   src: "./cover.jpg"
   alt: "The Tunnel"
-tags: ["ernesto-sabato", "novel","books-i-have-read"]
-categories: ["life"]
+tags: ["ernesto-sabato", "novel", "books-i-have-read"]
+categories: ["یادداشت"]
 ---
 
 I've always been drawn to novels that burrow deep into the human psyche, and Ernesto Sabato's *El Túnel* is a prime example of this. I first read the Persian translation many years ago, and it left a lasting impression on me. It's one of those books that you feel compelled to revisit, especially with the mindset I've cultivated over the years.
@@ -20,4 +20,3 @@ One of the most striking quotes from the book is:
 This quote perfectly encapsulates the bittersweet nature of nostalgia and how we often romanticize the past, conveniently forgetting its hardships.
 
 Sabato's writing is raw and unflinching, and *El Túnel* stands as a testament to his ability to delve into the darkest corners of the human experience. It’s a book that I highly recommend, especially if you're in the mood for something that challenges your perceptions and leaves you with more questions than answers.
-

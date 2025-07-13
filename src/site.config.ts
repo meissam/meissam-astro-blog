@@ -1,14 +1,13 @@
 import type { SiteConfig } from "@/types";
 
 export enum Categories {
-	Leadership = "leadership",
-	Code = "code",
-	Life = "life",
+	Photo = "عکس",
+	Note = "یادداشت",
 }
 
 export const siteConfig: SiteConfig = {
 	// Used as both a meta property (src/components/BaseHead.astro L:31 + L:49)
-	author: "Meissam Rasouli",
+	author: "وبلاگ شخصی میثم رسولی",
 	// Date.prototype.toLocaleDateString() parameters, found in src/utils/date.ts.
 	date: {
 		locale: "fa-IR",
@@ -19,7 +18,7 @@ export const siteConfig: SiteConfig = {
 		},
 	},
 	// Used as the default description meta property and webmanifest description
-	description: "Meissam Rasouli's Personal Blog",
+	description: "وبلاگ شخصی میثم رسولی",
 	// HTML lang property, found in src/layouts/Base.astro L:18 & astro.config.ts L:48
 	lang: "fa",
 	// Meta property, found in src/components/BaseHead.astro L:42
@@ -27,22 +26,18 @@ export const siteConfig: SiteConfig = {
 	// Option to sort posts by updatedDate if set to true (if property exists). Default (false) will sort by publishDate
 	sortPostsByUpdatedDate: false,
 	// Used to construct the meta title property found in src/components/BaseHead.astro L:11, and webmanifest name found in astro.config.ts L:42
-	title: "Meissam Rasouli's Personal blog",
+	title: "وبلاگ شخصی میثم رسولی",
 };
 
 // Used to generate links in both the Header & Footer.
 export const menuLinks: { path: string; title: string }[] = [
 	{
-		title: Categories.Leadership,
-		path: "/categories/leadership/",
+		title: Categories.Note,
+		path: "/categories/notes/",
 	},
 	{
-		title: Categories.Code,
-		path: "/categories/code/",
-	},
-	{
-		title: Categories.Life,
-		path: "/categories/life/",
+		title: Categories.Photo,
+		path: "/categories/photos/",
 	},
 ];
 
@@ -50,19 +45,19 @@ export const menuLinks: { path: string; title: string }[] = [
 export const footerLinks: { path: string; title: string }[] = [
 	{
 		path: "/",
-		title: "Home",
+		title: "خانه",
 	},
 	{
 		path: "/about/",
-		title: "About",
+		title: "درباره من",
 	},
 	{
 		path: "/posts/",
-		title: "Archive",
+		title: "بایگانی",
 	},
 	{
-		title: "Tags",
 		path: "/tags/",
+		title: "برچسب‌ها",
 	},
 	{
 		title: "RSS",

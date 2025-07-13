@@ -7,54 +7,37 @@
 	:root[data-theme="light"] {
 		color-scheme: light;
 		/* https://tailwindcss.com/docs/customizing-colors#using-css-variables */
-		--theme-bg: 0deg 0% 98%;
-		--theme-link: 172deg 18% 41%;
-		--theme-text: 203deg 11% 15%;
-		--theme-accent: 351deg 66% 48%;
-		--theme-accent-2: 0deg 0% 7%;
-		--theme-quote: 351deg 66% 48%;
+		--theme-bg: 30deg 20% 97%;
+		--theme-link: 205deg 30% 38%;
+		--theme-text: 0deg 0% 20%;
+		--theme-accent: 338deg 55% 43%;
+		--theme-accent-2: 338deg 60% 28%;
+		--theme-quote: 338deg 50% 48%;
+		--header-bg: 220deg 14% 95%;
 	}
 
 	:root[data-theme="dark"] {
 		color-scheme: dark;
-		--theme-bg: 210deg 6% 12%;
-		--theme-link: 330deg 49% 67%;
-		--theme-text: 220deg 3% 79%;
-		--theme-accent: 159deg 64% 45%;
-		--theme-accent-2: 0deg 0% 93%;
-		--theme-quote: 102deg 100% 86%;
+		--theme-bg: 230deg 10% 12%;
+		--theme-link: 338deg 45% 62%;
+		--theme-text: 0deg 0% 88%;
+		--theme-accent: 338deg 50% 45%;
+		--theme-accent-2: 338deg 40% 70%;
+		--theme-quote: 338deg 50% 52%;
+		--header-bg: 230deg 11.5% 10%;
 	}
 }
 
 @font-face {
 	font-family: "Sahel";
-	src: url("/fonts/Sahel.eot");
-	src:
-		url("/fonts/Sahel.eot?#iefix") format("embedded-opentype"),
-		url("/fonts/Sahel.woff2") format("woff2"),
-		url("/fonts/Sahel.woff") format("woff"),
-		url("/fonts/Sahel.ttf") format("truetype");
+	src: url("/fonts/Sahel.woff2");
+	src: url("/fonts/Sahel.woff2") format("woff2");
 	font-weight: normal;
 }
 
 @font-face {
 	font-family: "Sahel";
-	src: url("/fonts/Sahel-Bold.eot");
-	src:
-		url("/fonts/Sahel-Bold.eot?#iefix") format("embedded-opentype"),
-		url("/fonts/Sahel-Bold.woff2") format("woff2"),
-		url("/fonts/Sahel-Bold.woff") format("woff"),
-		url("/fonts/Sahel-Bold.ttf") format("truetype");
-	font-weight: bold;
-}
-
-@font-face {
-	font-family: "Sahel";
-	src: url("/fonts/Sahel-Black.eot");
-	src:
-		url("/fonts/Sahel-Black.eot?#iefix") format("embedded-opentype"),
-		url("/fonts/Sahel-Black.woff2") format("woff2"),
-		url("/fonts/Sahel-Black.woff") format("woff"),
-		url("/fonts/Sahel-Black.ttf") format("truetype");
+	src: url("/fonts/Sahel-Black.woff2");
+	src: url("/fonts/Sahel-Black.woff2") format("woff2");
 	font-weight: bold;
 }

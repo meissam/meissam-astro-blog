@@ -5,8 +5,8 @@ publishDate: "01 May 2022"
 coverImage:
   src: "./cover.jpg"
   alt: "When: The Scientific Secrets of Perfect Timing"
-tags: ["daniel-h-pink", "productivity","cognitive-biases", "psychology","science", "well-being","books-i-have-read"]
-categories: ["life"]
+tags: ["daniel-h-pink", "productivity", "cognitive-biases", "psychology", "science", "well-being", "books-i-have-read"]
+categories: ["یادداشت"]
 ---
 
 Timing is everything. That’s the gist of Daniel H. Pink's book, *When: The Scientific Secrets of Perfect Timing*. I first read the Persian translation many years ago, and I still find it fascinating. It’s one of those books that make you rethink how you go about your day-to-day activities.
