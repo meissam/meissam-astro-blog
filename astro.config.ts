@@ -19,7 +19,6 @@ import rehypeExternalLinks from "rehype-external-links";
 export default defineConfig({
 	image: {
 		service: passthroughImageService(),
-		domains: ["webmention.io"],
 	},
 	integrations: [
 		icon(),
