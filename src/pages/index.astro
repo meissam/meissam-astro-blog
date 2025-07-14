@@ -1,5 +1,4 @@
 ---
-import SocialList from "@/components/SocialList.astro";
 import PostPreview from "@/components/blog/PostPreview.astro";
 import { sortMDByDate, getPostsByCategory } from "@/data/post";
 import { Categories } from "@/site-config";
@@ -11,15 +10,6 @@ const allPhotos = sortMDByDate(await getPostsByCategory(Categories.Photo)).slice
 ---
 
 <PageLayout meta={{ title: "Home" }}>
-	<section>
-		<h1 class="title mb-6">سلام 👋</h1>
-		<p class="mb-4">
-			یک مهندس نرم‌افزار با علاقه‌ی شدید به هنر، فرهنگ و علم، به وبلاگ شخصی من خوش آمدید. در اینجا،
-			می‌توانید افکار من در مورد مهندسی نرم‌افزار، رهبری و فراتر از آن را به همراه برخی از
-			یادداشت‌های شخصی‌ام بیابید.
-		</p>
-		<SocialList />
-	</section>
 	<section aria-label="Blog post list" class="mt-16">
 		<h2 class="title mb-4 text-xl capitalize">{Categories.Note}</h2>
 		<ul class="space-y-4">

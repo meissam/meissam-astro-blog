@@ -9,13 +9,13 @@ const url = new URL(Astro.request.url);
 ---
 
 <header
-	class="group relative mb-16 flex items-center justify-between rounded-lg p-4"
+	class="group relative mb-16 flex items-center justify-between rounded-lg p-4 sm:flex-col"
 	id="main-header"
 >
 	<div class="flex sm:flex-col">
 		<a
 			aria-current={url.pathname === "/" ? "page" : false}
-			class="flex items-center grayscale hover:filter-none"
+			class="flex items-center grayscale hover:filter-none sm:flex-col"
 			href="/"
 		>
 			<Image
@@ -24,18 +24,26 @@ const url = new URL(Astro.request.url);
 				alt="Meissam Rasouli Logo"
 				aria-label="Meissam Rasouli Logo"
 				role="img"
-				class="me-3 w-12 rounded-md"
 			/>
 			<div class="flex flex-col">
 				<span class="text-2xl font-bold">وبلاگ شخصی میثم رسولی</span>
 				<span class="text-xs">نوشته‌های پراکنده یک برنامه‌نویس</span>
 			</div>
 		</a>
+
+		<section>
+			<h1 class="title mb-6">سلام 👋</h1>
+			<p class="mb-4">
+				یک مهندس نرم‌افزار با علاقه‌ی شدید به هنر، فرهنگ و علم، به وبلاگ شخصی من خوش آمدید. در
+				اینجا، می‌توانید افکار من در مورد مهندسی نرم‌افزار، رهبری و فراتر از آن را به همراه برخی از
+				یادداشت‌های شخصی‌ام بیابید.
+			</p>
+		</section>
 	</div>
-	<div class="flex items-center">
+	<div class="flex items-center sm:flex-col">
 		<nav
 			aria-label="Main menu"
-			class="absolute inset-x-4 top-14 hidden flex-col items-start gap-y-4 rounded-md bg-bgColor/[.85] py-4 text-accent shadow backdrop-blur group-[.menu-open]:z-50 group-[.menu-open]:flex sm:static sm:z-auto sm:-ms-4 sm:mt-1 sm:flex sm:flex-row sm:items-center sm:rounded-none sm:bg-transparent sm:py-0 sm:shadow-none sm:backdrop-blur-none"
+			class="absolute inset-x-4 top-14 hidden flex-col items-start gap-y-4 rounded-md bg-bgColor/[.85] py-4 text-accent shadow backdrop-blur group-[.menu-open]:z-50 group-[.menu-open]:flex sm:static sm:z-auto sm:-ms-4 sm:mt-1 sm:flex sm:items-center sm:rounded-none sm:bg-transparent sm:py-0 sm:shadow-none sm:backdrop-blur-none"
 			id="navigation-menu"
 		>
 			{
