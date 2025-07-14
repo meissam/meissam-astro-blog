@@ -1,10 +1,5 @@
 import type { SiteConfig } from "@/types";
 
-export enum Categories {
-	Photo = "عکس",
-	Note = "یادداشت",
-}
-
 export const siteConfig: SiteConfig = {
 	// Used as both a meta property (src/components/BaseHead.astro L:31 + L:49)
 	author: "وبلاگ شخصی میثم رسولی",
@@ -32,32 +27,21 @@ export const siteConfig: SiteConfig = {
 // Used to generate links in both the Header & Footer.
 export const menuLinks: { path: string; title: string }[] = [
 	{
-		title: Categories.Note,
-		path: "/categories/notes/",
-	},
-	{
-		title: Categories.Photo,
-		path: "/categories/photos/",
-	},
-];
-
-// Used to generate links in both the Header & Footer.
-export const footerLinks: { path: string; title: string }[] = [
-	{
 		path: "/",
 		title: "خانه",
 	},
-	{
-		path: "/about/",
-		title: "درباره من",
-	},
+
 	{
 		path: "/posts/",
-		title: "بایگانی",
+		title: "یادداشت‌ها",
 	},
 	{
 		path: "/tags/",
 		title: "برچسب‌ها",
+	},
+	{
+		path: "/about/",
+		title: "درباره من",
 	},
 	{
 		title: "RSS",

@@ -1,5 +1,5 @@
 ---
-import { footerLinks, siteConfig } from "@/site-config";
+import { siteConfig } from "@/site-config";
 import SocialList from "@/components/SocialList.astro";
 
 const year = new Date().getFullYear();
@@ -17,17 +17,6 @@ const year = new Date().getFullYear();
 			title="Astro Cactus Theme">Astro Cactus Theme</a
 		>.
 	</div>
-	<nav
-		aria-label="More on this site"
-		class="flex gap-x-2 sm:gap-x-0 sm:divide-x sm:divide-x-reverse sm:divide-gray-500"
-	>
-		{
-			footerLinks.map((link) => (
-				<a class="px-4 py-2 sm:py-0 sm:hover:text-textColor sm:hover:underline" href={link.path}>
-					{link.title}
-				</a>
-			))
-		}
-	</nav>
+
 	<SocialList />
 </footer>
