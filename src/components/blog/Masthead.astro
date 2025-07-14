@@ -21,7 +21,7 @@ const dateTimeOptions: Intl.DateTimeFormatOptions = {
 		<div class="mb-6 aspect-[16/9]">
 			<Image
 				alt={data.coverImage.alt}
-				class="rounded-xl object-cover"
+				class="mt-0 object-cover"
 				fetchpriority="high"
 				loading="eager"
 				src={data.coverImage.src}
@@ -39,7 +39,7 @@ const dateTimeOptions: Intl.DateTimeFormatOptions = {
 	</p>
 	{
 		data.updatedDate && (
-			<span class="rounded-lg bg-quote/10 px-2 py-1 text-quote">
+			<span class="bg-quote/10 px-2 py-1 text-quote">
 				به روز‌رسانی شده:
 				<FormattedDate class="ms-1" date={data.updatedDate} dateTimeOptions={dateTimeOptions} />
 			</span>

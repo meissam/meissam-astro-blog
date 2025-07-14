@@ -144,10 +144,6 @@ export default {
 							marginRight: "0.25rem",
 						},
 
-						img: {
-							borderRadius: "0.75rem",
-						},
-
 						p: {
 							textAlign: "justify",
 						},
