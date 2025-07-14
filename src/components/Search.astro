@@ -7,12 +7,19 @@ import { Icon } from "astro-icon/components";
 
 <site-search id="search">
 	<button
-		class="flex h-9 w-9 items-center justify-center ring-zinc-400 transition-all hover:ring-2"
+		class="flex items-center justify-center ring-zinc-400 transition-all"
 		data-open-modal
 		disabled
 	>
-		<Icon aria-hidden="true" class="h-5 w-5" focusable="false" name="line-md:search" />
+		<Icon aria-hidden="true" class="h-5 w-5 sm:hidden" focusable="false" name="line-md:search" />
+		<a
+			class="hidden py-4 capitalize text-accent underline-offset-2 sm:block sm:py-0 sm:hover:underline"
+			data-astro-prefetch
+		>
+			جستجو
+		</a>
 	</button>
+
 	<dialog
 		aria-label="search"
 		class="h-full max-h-full w-full max-w-full border border-zinc-400 bg-bgColor shadow backdrop:backdrop-blur sm:mx-auto sm:mb-auto sm:mt-16 sm:h-max sm:max-h-[calc(100%-8rem)] sm:min-h-[15rem] sm:w-5/6 sm:max-w-[48rem]"
@@ -20,7 +27,7 @@ import { Icon } from "astro-icon/components";
 		<div class="dialog-frame flex flex-col gap-4 p-6 pt-12 sm:pt-6">
 			<button
 				class="ms-auto cursor-pointer bg-zinc-200 p-2 font-semibold dark:bg-zinc-700"
-				data-close-modal>Close</button
+				data-close-modal>بستن</button
 			>
 			{
 				import.meta.env.DEV ? (

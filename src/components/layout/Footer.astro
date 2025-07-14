@@ -1,6 +1,7 @@
 ---
 import SocialList from "@/components/SocialList.astro";
 import { convertToPersianDigits } from "@/utils/toPersianDigits";
+import ThemeToggle from "../ThemeToggle.astro";
 
 const year = new Date().getFullYear();
 ---
@@ -17,5 +18,8 @@ const year = new Date().getFullYear();
 		> ساخته شده است.
 	</div>
 
-	<SocialList />
+	<div class="flex justify-center align-middle">
+		<SocialList />
+		<ThemeToggle />
+	</div>
 </footer>
