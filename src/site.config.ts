@@ -43,8 +43,4 @@ export const menuLinks: { path: string; title: string }[] = [
 		path: "/about/",
 		title: "درباره من",
 	},
-	{
-		title: "RSS",
-		path: "/rss.xml",
-	},
 ];
