@@ -6,18 +6,8 @@ import { Categories } from "@/site-config";
 import PageLayout from "@/layouts/Base.astro";
 
 const MAX_POSTS = 5;
-const allLeadershipPosts = sortMDByDate(await getPostsByCategory(Categories.Leadership)).slice(
-	0,
-	MAX_POSTS
-);
-const allSoftwareEngineeringPosts = sortMDByDate(await getPostsByCategory(Categories.Code)).slice(
-	0,
-	MAX_POSTS
-);
-const allPersonalNotesPosts = sortMDByDate(await getPostsByCategory(Categories.Life)).slice(
-	0,
-	MAX_POSTS
-);
+const allNotes = sortMDByDate(await getPostsByCategory(Categories.Note)).slice(0, MAX_POSTS);
+const allPhotos = sortMDByDate(await getPostsByCategory(Categories.Photo)).slice(0, MAX_POSTS);
 ---
 
 <PageLayout meta={{ title: "Home" }}>
@@ -31,10 +21,10 @@ const allPersonalNotesPosts = sortMDByDate(await getPostsByCategory(Categories.L
 		<SocialList />
 	</section>
 	<section aria-label="Blog post list" class="mt-16">
-		<h2 class="title mb-4 text-xl capitalize">{Categories.Leadership}</h2>
+		<h2 class="title mb-4 text-xl capitalize">{Categories.Note}</h2>
 		<ul class="space-y-4">
 			{
-				allLeadershipPosts.map((p) => (
+				allNotes.map((p) => (
 					<li class="grid gap-2 sm:grid-cols-[auto_1fr] sm:[&_q]:col-start-2">
 						{/* @ts-ignore-next-line - issue with -> @astrojs/check@0.9.3 */}
 						<PostPreview post={p} />
@@ -44,23 +34,10 @@ const allPersonalNotesPosts = sortMDByDate(await getPostsByCategory(Categories.L
 		</ul>
 	</section>
 	<section aria-label="Blog post list" class="mt-16">
-		<h2 class="title mb-4 text-xl capitalize">{Categories.Code}</h2>
+		<h2 class="title mb-4 text-xl capitalize">{Categories.Photo}</h2>
 		<ul class="space-y-4">
 			{
-				allSoftwareEngineeringPosts.map((p) => (
-					<li class="grid gap-2 sm:grid-cols-[auto_1fr] sm:[&_q]:col-start-2">
-						{/* @ts-ignore-next-line - issue with -> @astrojs/check@0.9.3 */}
-						<PostPreview post={p} />
-					</li>
-				))
-			}
-		</ul>
-	</section>
-	<section aria-label="Blog post list" class="mt-16">
-		<h2 class="title mb-4 text-xl capitalize">{Categories.Life}</h2>
-		<ul class="space-y-4">
-			{
-				allPersonalNotesPosts.map((p) => (
+				allPhotos.map((p) => (
 					<li class="grid gap-2 sm:grid-cols-[auto_1fr] sm:[&_q]:col-start-2">
 						{/* @ts-ignore-next-line - issue with -> @astrojs/check@0.9.3 */}
 						<PostPreview post={p} />
