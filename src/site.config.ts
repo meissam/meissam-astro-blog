@@ -36,10 +36,6 @@ export const menuLinks: { path: string; title: string }[] = [
 		title: "یادداشت‌ها",
 	},
 	{
-		path: "/tags/",
-		title: "برچسب‌ها",
-	},
-	{
 		path: "/about/",
 		title: "درباره من",
 	},

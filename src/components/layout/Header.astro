@@ -4,12 +4,13 @@ import Search from "../Search.astro";
 import { Image } from "astro:assets";
 import Avatar from "@/assets/avatar.png";
 import { Icon } from "astro-icon/components";
+import Tags from "../Tags.astro";
 
 const url = new URL(Astro.request.url);
 ---
 
 <header
-	class="group relative flex items-center justify-between sm:flex-col sm:items-end sm:gap-8"
+	class="group relative flex items-center justify-between sm:flex-col sm:items-start sm:gap-8"
 	id="main-header"
 >
 	<div class="flex sm:flex-col">
@@ -26,23 +27,23 @@ const url = new URL(Astro.request.url);
 				aria-label="Meissam Rasouli Logo"
 				role="img"
 			/>
-			<div class="mt-2 flex flex-col sm:items-end">
+			<div class="mt-2 flex flex-col sm:items-start">
 				<span class="text-md font-bold"> وبلاگ شخصی میثم رسولی</span>
 				<span class="text-xs">یادداشت‌های یک برنامه‌نویس</span>
 			</div>
 		</a>
 	</div>
-	<div class="flex items-end sm:flex-col sm:gap-8">
+	<div class="flex items-start sm:flex-col sm:gap-8">
 		<nav
 			aria-label="Main menu"
-			class="absolute inset-x-4 top-14 hidden flex-col items-start gap-y-4 bg-header py-4 text-accent shadow backdrop-blur group-[.menu-open]:z-50 group-[.menu-open]:flex sm:static sm:z-auto sm:-ms-4 sm:mt-1 sm:flex sm:items-end sm:bg-transparent sm:py-0 sm:shadow-none sm:backdrop-blur-none"
+			class="absolute inset-x-4 top-14 hidden flex-col items-start gap-y-4 bg-header py-4 text-link shadow backdrop-blur group-[.menu-open]:z-50 group-[.menu-open]:flex sm:static sm:z-auto sm:mt-1 sm:flex sm:items-start sm:bg-transparent sm:py-0 sm:shadow-none sm:backdrop-blur-none"
 			id="navigation-menu"
 		>
 			{
 				menuLinks.map((link) => (
 					<a
 						aria-current={url.pathname === link.path ? "page" : false}
-						class="py-4 capitalize underline-offset-2 sm:py-0 sm:hover:underline"
+						class="py-4 underline-offset-2 sm:py-0 sm:hover:underline"
 						data-astro-prefetch
 						href={link.path}
 					>
@@ -52,6 +53,7 @@ const url = new URL(Astro.request.url);
 			}
 			<Search />
 		</nav>
+		<Tags />
 
 		<div class="sm:flex sm:divide-y">
 			<mobile-button>

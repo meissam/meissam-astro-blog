@@ -1,18 +1,12 @@
 ---
 import { getAllPosts, getUniqueTagsWithCount } from "@/data/post";
-import PageLayout from "@/layouts/Base.astro";
 import { convertToPersianDigits } from "@/utils/toPersianDigits";
 
 const allPosts = await getAllPosts();
 const allTags = getUniqueTagsWithCount(allPosts);
-
-const meta = {
-	description: "A list of all the topics I've written about in my posts",
-	title: "All Tags",
-};
 ---
 
-<PageLayout meta={meta}>
+<div>
 	<h1 class="title mb-6">برچسب‌ها</h1>
 	<ul class="space-y-4 p-0">
 		{
@@ -31,4 +25,4 @@ const meta = {
 			))
 		}
 	</ul>
-</PageLayout>
+</div>
