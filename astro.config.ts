@@ -1,19 +1,15 @@
-import fs from "node:fs";
 import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
 import tailwind from "@astrojs/tailwind";
-import expressiveCode from "astro-expressive-code";
 import icon from "astro-icon";
 import robotsTxt from "astro-robots-txt";
 import webmanifest from "astro-webmanifest";
 import { defineConfig, passthroughImageService } from "astro/config";
-import { expressiveCodeOptions } from "./src/site.config";
 import { siteConfig } from "./src/site.config";
 
 // Remark plugins
 import remarkDirective from "remark-directive"; /* Handle ::: directives as nodes */
 import remarkUnwrapImages from "remark-unwrap-images";
-import { remarkAdmonitions } from "./src/plugins/remark-admonitions"; /* Add admonitions */
 import { remarkReadingTime } from "./src/plugins/remark-reading-time";
 
 // Rehype plugins
@@ -23,10 +19,8 @@ import rehypeExternalLinks from "rehype-external-links";
 export default defineConfig({
 	image: {
 		service: passthroughImageService(),
-		domains: ["webmention.io"],
 	},
 	integrations: [
-		expressiveCode(expressiveCodeOptions),
 		icon(),
 		tailwind({
 			applyBaseStyles: false,
@@ -86,7 +80,7 @@ export default defineConfig({
 				},
 			],
 		],
-		remarkPlugins: [remarkUnwrapImages, remarkReadingTime, remarkDirective, remarkAdmonitions],
+		remarkPlugins: [remarkUnwrapImages, remarkReadingTime, remarkDirective],
 		remarkRehype: {
 			footnoteLabelProperties: {
 				className: [""],
@@ -97,26 +91,4 @@ export default defineConfig({
 	prefetch: true,
 	// ! Please remember to replace the following site property with your own domain
 	site: "https://meissam.com",
-	vite: {
-		optimizeDeps: {
-			exclude: ["@resvg/resvg-js"],
-		},
-		plugins: [rawFonts([".ttf", ".woff"])],
-	},
 });
-
-function rawFonts(ext: string[]) {
-	return {
-		name: "vite-plugin-raw-fonts",
-		// @ts-expect-error:next-line
-		transform(_, id) {
-			if (ext.some((e) => id.endsWith(e))) {
-				const buffer = fs.readFileSync(id);
-				return {
-					code: `export default ${JSON.stringify(buffer)}`,
-					map: null,
-				};
-			}
-		},
-	};
-}
