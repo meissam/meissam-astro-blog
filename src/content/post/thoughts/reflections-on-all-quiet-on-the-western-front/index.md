@@ -5,8 +5,8 @@ publishDate: "31 August 2012"
 coverImage:
   src: "./cover.jpg"
   alt: "All Quiet on the Western Front"
-tags: ["erich-maria-remarque", "novel","books-i-have-read"]
-categories: ["life"]
+tags: ["erich-maria-remarque", "novel", "books-i-have-read"]
+categories: ["thoughts"]
 ---
 
 I've always liked Erich Maria Remarque's *All Quiet on the Western Front*. It's one of those books that leaves you with a lingering sense of reflection and awe, much like the works of Richard Brautigan, albeit in a very different context. I first read the Persian translation, and now I'm sharing my thoughts with you in English.

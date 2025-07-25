@@ -5,8 +5,8 @@ publishDate: "14 July 2022"
 coverImage:
   src: "./cover.jpg"
   alt: "Stop Reading the News"
-tags: ["rolf-dobelli", "well-being","books-i-have-read"]
-categories: ["life"]
+tags: ["rolf-dobelli", "well-being", "books-i-have-read"]
+categories: ["thoughts"]
 ---
 
 I used to have an obsession with reading the news, but it only added a lot of stress to my life. That’s why I couldn't help but think about a book that has had a profound impact on me: *Stop Reading the News* by Rolf Dobelli. If you're still glued to the news, this book might just convince you that it’s not helping you at all.

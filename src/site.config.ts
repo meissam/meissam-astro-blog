@@ -1,9 +1,9 @@
 import type { SiteConfig } from "@/types";
 
 export enum Categories {
-	Leadership = "leadership",
+	Playground = "playground",
 	Code = "code",
-	Life = "life",
+	Thoughts = "thoughts",
 }
 
 export const siteConfig: SiteConfig = {
@@ -33,16 +33,16 @@ export const siteConfig: SiteConfig = {
 // Used to generate links in both the Header & Footer.
 export const menuLinks: { path: string; title: string }[] = [
 	{
-		title: Categories.Leadership,
-		path: "/categories/leadership/",
+		title: Categories.Playground,
+		path: "/categories/playground/",
 	},
 	{
 		title: Categories.Code,
 		path: "/categories/code/",
 	},
 	{
-		title: Categories.Life,
-		path: "/categories/life/",
+		title: Categories.Thoughts,
+		path: "/categories/thoughts/",
 	},
 ];
 
