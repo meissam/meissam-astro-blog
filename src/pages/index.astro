@@ -6,7 +6,7 @@ import { Categories } from "@/site-config";
 import PageLayout from "@/layouts/Base.astro";
 
 const MAX_POSTS = 5;
-const allLeadershipPosts = sortMDByDate(await getPostsByCategory(Categories.Leadership)).slice(
+const allPlaygroundPosts = sortMDByDate(await getPostsByCategory(Categories.Playground)).slice(
 	0,
 	MAX_POSTS
 );
@@ -14,7 +14,7 @@ const allSoftwareEngineeringPosts = sortMDByDate(await getPostsByCategory(Catego
 	0,
 	MAX_POSTS
 );
-const allPersonalNotesPosts = sortMDByDate(await getPostsByCategory(Categories.Life)).slice(
+const allPersonalNotesPosts = sortMDByDate(await getPostsByCategory(Categories.Thoughts)).slice(
 	0,
 	MAX_POSTS
 );
@@ -25,23 +25,10 @@ const allPersonalNotesPosts = sortMDByDate(await getPostsByCategory(Categories.L
 		<h1 class="title mb-6">Hi 👋. I'm Meissam.</h1>
 		<p class="mb-4">
 			A software engineer with a keen interest in art, culture, and science, welcome to my personal
-			blog. Here, you'll discover my thoughts on software engineering, leadership, and beyond, along
-			with some of my personal notes.
+			blog. Here, you'll discover my thoughts on software engineering, and beyond; alongside
+			personal notes and creative explorations from my playground.
 		</p>
 		<SocialList />
-	</section>
-	<section aria-label="Blog post list" class="mt-16">
-		<h2 class="title mb-4 text-xl capitalize">{Categories.Leadership}</h2>
-		<ul class="space-y-4">
-			{
-				allLeadershipPosts.map((p) => (
-					<li class="grid gap-2 sm:grid-cols-[auto_1fr] sm:[&_q]:col-start-2">
-						{/* @ts-ignore-next-line - issue with -> @astrojs/check@0.9.3 */}
-						<PostPreview post={p} />
-					</li>
-				))
-			}
-		</ul>
 	</section>
 	<section aria-label="Blog post list" class="mt-16">
 		<h2 class="title mb-4 text-xl capitalize">{Categories.Code}</h2>
@@ -57,10 +44,23 @@ const allPersonalNotesPosts = sortMDByDate(await getPostsByCategory(Categories.L
 		</ul>
 	</section>
 	<section aria-label="Blog post list" class="mt-16">
-		<h2 class="title mb-4 text-xl capitalize">{Categories.Life}</h2>
+		<h2 class="title mb-4 text-xl capitalize">{Categories.Thoughts}</h2>
 		<ul class="space-y-4">
 			{
 				allPersonalNotesPosts.map((p) => (
+					<li class="grid gap-2 sm:grid-cols-[auto_1fr] sm:[&_q]:col-start-2">
+						{/* @ts-ignore-next-line - issue with -> @astrojs/check@0.9.3 */}
+						<PostPreview post={p} />
+					</li>
+				))
+			}
+		</ul>
+	</section>
+	<section aria-label="Blog post list" class="mt-16">
+		<h2 class="title mb-4 text-xl capitalize">{Categories.Playground}</h2>
+		<ul class="space-y-4">
+			{
+				allPlaygroundPosts.map((p) => (
 					<li class="grid gap-2 sm:grid-cols-[auto_1fr] sm:[&_q]:col-start-2">
 						{/* @ts-ignore-next-line - issue with -> @astrojs/check@0.9.3 */}
 						<PostPreview post={p} />

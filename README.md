@@ -1,6 +1,6 @@
 # Meissam's Personal Blog
 
-Welcome to my personal blog, where you'll find my notes on software engineering, leadership, and beyond.
+Welcome to my personal blog, where you'll find my notes on software engineering and beyond.
 
 ## Acknowledgements
 
