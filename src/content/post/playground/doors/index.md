@@ -1,18 +1,24 @@
 ---
 title: "Doors"
-description: "Discover the key roles and responsibilities of engineering managers, and learn what it takes to transition from developer to leader in this essential guide."
-publishDate: "05 September 2024"
-tags: ["leadership", "engineering-manager", "people-management"]
+description: "Doors in Stockholm — snapped on a sunny stroll, each one hinting at the soul and style of its home. All captured with my phone."
+publishDate: "27 May 2024"
+tags: ["photography"]
 categories: ["playground"]
 gallery:
   - src: ./photo1.jpg
-    alt: "Kafshdoozak 1"
+    alt: "© 2024 - Photo by Meissam Rasouli"
   - src: ./photo2.jpg
-    alt: "Kafshdoozak 2"
+    alt: "© 2024 - Photo by Meissam Rasouli"
   - src: ./photo3.jpg
-    alt: "Kafshdoozak 3"
+    alt: "© 2024 - Photo by Meissam Rasouli"
   - src: ./photo4.jpg
-    alt: "Kafshdoozak 4"
+    alt: "© 2024 - Photo by Meissam Rasouli"
+  - src: ./photo5.jpg
+    alt: "© 2024 - Photo by Meissam Rasouli"
+  - src: ./photo6.jpg
+    alt: "© 2024 - Photo by Meissam Rasouli"
+  - src: ./photo7.jpg
+    alt: "© 2024 - Photo by Meissam Rasouli"
 ---
 
-In this post, I'll explore the core responsibilities of an engineering manager and what it truly means to transition into this pivotal role.
+I believe doors are an important part of a house—they show its class and character. I took these photos during afternoon walks in Stockholm, drawn to the way each door seemed to tell its own story. All photos were taken with my phone.
