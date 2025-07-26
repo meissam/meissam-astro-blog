@@ -1,0 +1,50 @@
+---
+import { Image } from "astro:assets";
+import "glightbox/dist/css/glightbox.css";
+
+// Define gallery image shape
+interface GalleryImage {
+	src: ImageMetadata;
+	alt?: string | null;
+}
+
+const { images }: { images?: GalleryImage[] } = Astro.props;
+---
+
+{
+	images && (
+		<div class="glightbox-gallery my-8 grid grid-cols-2 gap-4">
+			{images.map(({ src, alt }) => (
+				<a
+					href={src.src}
+					class="glightbox"
+					data-gallery="gallery"
+					data-title={alt ?? "Gallery image"}
+				>
+					<Image
+						src={src}
+						alt={alt ?? "Gallery image"}
+						width={640}
+						format="avif"
+						quality="mid"
+						class="rounded-lg"
+						loading="lazy"
+					/>
+				</a>
+			))}
+		</div>
+	)
+}
+
+<script>
+	import GLightbox from "glightbox";
+
+	document.addEventListener("DOMContentLoaded", () => {
+		GLightbox({
+			selector: ".glightbox",
+			touchNavigation: true,
+			loop: true,
+			closeButton: true,
+		});
+	});
+</script>
