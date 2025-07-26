@@ -1,5 +1,5 @@
 ---
-title: "Doors"
+title: "Door Photography"
 description: "Doors in Stockholm — snapped on a sunny stroll, each one hinting at the soul and style of its home. All captured with my phone."
 publishDate: "27 May 2024"
 tags: ["photography"]
