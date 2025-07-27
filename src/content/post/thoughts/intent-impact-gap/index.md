@@ -6,7 +6,7 @@ tags: ["thoughts", "communication"]
 categories: ["thoughts"]
 ---
 
-Ever walked away from a conversation thinking, _“I didn’t mean for it to land that way…”_? That’s the **intent-impact gap**—a subtle but powerful disconnect between what you meant and how it was received.
+Ever walked away from a conversation thinking, _“I didn’t mean for it to land that way…”_? Thanks to John Ullmen, the instructor of [Communication Foundation](https://www.linkedin.com/learning/communication-foundations-2013/welcome), I've learned that’s the **intent-impact gap**—a subtle but powerful disconnect between what you meant and how it was received.
 
 - **Intent**: Your desired outcome—what you hope your audience will _think_, _feel_, or _do_.
 - **Impact**: The real outcome—what your audience actually _thinks_, _feels_, or _does_.
