@@ -3,7 +3,6 @@ title: "Intent-Impact Gap"
 description: "Sharpen your message to shape how others think, feel, and act—and ensure your communication lands with clarity and purpose."
 publishDate: "23 March 2023"
 tags: ["thoughts", "communication"]
-categories: ["thoughts"]
 ---
 
 Ever walked away from a conversation thinking, _“I didn’t mean for it to land that way…”_? Thanks to John Ullmen, the instructor of [Communication Foundation](https://www.linkedin.com/learning/communication-foundations-2013/welcome), I've learned that’s the **intent-impact gap**—a subtle but powerful disconnect between what you meant and how it was received.

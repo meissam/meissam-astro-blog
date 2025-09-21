@@ -42,8 +42,8 @@ export default {
 			},
 			fontFamily: {
 				// Add any custom fonts here
-				sans: ["Sahel", ...fontFamily.sans],
-				serif: ["Sahel", ...fontFamily.serif],
+				sans: ["Sahel"],
+				serif: ["Sahel"],
 			},
 			transitionProperty: {
 				height: "height",
