@@ -30,4 +30,17 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 			}
 		</ul>
 	</section>
+	<section aria-label="Blog post list" class="mt-16">
+		<h2 class="title mb-4 text-xl capitalize">{Categories.Playground}</h2>
+		<ul class="space-y-4">
+			{
+				allPlaygroundPosts.map((p) => (
+					<li class="grid gap-2 sm:grid-cols-[auto_1fr] sm:[&_q]:col-start-2">
+						{/* @ts-ignore-next-line - issue with -> @astrojs/check@0.9.3 */}
+						<PostPreview post={p} />
+					</li>
+				))
+			}
+		</ul>
+	</section>
 </PageLayout>

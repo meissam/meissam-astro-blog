@@ -29,6 +29,14 @@ const post = defineCollection({
 				.string()
 				.optional()
 				.transform((str) => (str ? new Date(str) : undefined)),
+			gallery: z
+				.array(
+					z.object({
+						src: image(), // Astro optimizes this
+						alt: z.string().optional(),
+					}),
+				)
+				.optional(),
 		}),
 	type: "content",
 });
