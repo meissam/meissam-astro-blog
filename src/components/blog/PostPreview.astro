@@ -26,8 +26,4 @@ const postDate = getPostSortDate(post);
 	</Tag><FormattedDate class="text-gray-600 dark:text-gray-400" date={postDate} />
 </div>
 
-{
-	withDesc && (
-		<p class="mt-0 line-clamp-3 italic text-zinc-500 dark:text-zinc-400">{post.data.description}</p>
-	)
-}
+{withDesc && <p class="mt-0 text-zinc-500 dark:text-zinc-400">{post.data.description}</p>}
