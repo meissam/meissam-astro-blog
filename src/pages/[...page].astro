@@ -2,13 +2,14 @@
 import type { CollectionEntry } from "astro:content";
 import Pagination from "@/components/Paginator.astro";
 import PostPreview from "@/components/blog/PostPreview.astro";
-import { getAllPosts, groupPostsByYear, sortMDByDate } from "@/data/post";
+import { getAllPosts, sortMDByDate } from "@/data/post";
 import PageLayout from "@/layouts/Base.astro";
 import type { GetStaticPaths, Page } from "astro";
 import { convertToPersianDigits } from "@/utils/toPersianDigits";
+import { groupPostsByJalaliYear } from "@/utils/date";
 
 export const getStaticPaths = (async ({ paginate }) => {
-	const MAX_POSTS_PER_PAGE = 4;
+	const MAX_POSTS_PER_PAGE = 10;
 	const allPosts = await getAllPosts();
 	const allPostsByDate = sortMDByDate(allPosts);
 	return paginate(allPostsByDate, { pageSize: MAX_POSTS_PER_PAGE });
@@ -40,19 +41,19 @@ const paginationProps = {
 	}),
 };
 
-const groupedByYear = groupPostsByYear(page.data);
-const descYearKeys = Object.keys(groupedByYear).sort((a, b) => +b - +a);
+const groupedByJalaliYear = groupPostsByJalaliYear(page.data);
+const descJalaliYearKeys = Object.keys(groupedByJalaliYear).sort((a, b) => +b - +a);
 ---
 
 <PageLayout meta={meta}>
 	<h1 class="title mb-6">یادداشت‌ها</h1>
 	<section aria-label="Blog post list">
 		{
-			descYearKeys.map((yearKey) => (
+			descJalaliYearKeys.map((yearKey) => (
 				<>
 					<h2 class="title text-lg">{convertToPersianDigits(yearKey)}</h2>
 					<ul class="mb-8 mt-6 space-y-8 text-start">
-						{groupedByYear[yearKey]?.map((p) => (
+						{groupedByJalaliYear[+yearKey]?.map((p) => (
 							<li class="flex flex-col gap-2">
 								<PostPreview post={p} withDesc />
 							</li>

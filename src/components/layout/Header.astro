@@ -16,7 +16,7 @@ const url = new URL(Astro.request.url);
 	<div class="flex sm:flex-col">
 		<a
 			aria-current={url.pathname === "/" ? "page" : false}
-			class="flex items-center grayscale hover:filter-none sm:flex-col"
+			class="flex grayscale hover:filter-none sm:flex-col"
 			href="/"
 		>
 			<Image
@@ -28,8 +28,8 @@ const url = new URL(Astro.request.url);
 				role="img"
 			/>
 			<div class="mt-2 flex flex-col sm:items-start">
-				<span class="text-md font-bold"> وبلاگ شخصی میثم رسولی</span>
-				<span class="text-xs">یادداشت‌های یک برنامه‌نویس</span>
+				<span class="text-md font-bold"> وبلاگ میثم رسولی</span>
+				<span class="text-xs"> یادداشتهای یک برنامه‌نویس </span>
 			</div>
 		</a>
 	</div>
