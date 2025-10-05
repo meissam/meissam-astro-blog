@@ -2,7 +2,6 @@
 // Heavy inspiration taken from Astro Starlight -> https://github.com/withastro/starlight/blob/main/packages/starlight/components/Search.astro
 
 import "@pagefind/default-ui/css/ui.css";
-import { Icon } from "astro-icon/components";
 ---
 
 <site-search id="search">
@@ -11,9 +10,8 @@ import { Icon } from "astro-icon/components";
 		data-open-modal
 		disabled
 	>
-		<Icon aria-hidden="true" class="h-5 w-5 sm:hidden" focusable="false" name="line-md:search" />
 		<a
-			class="hidden py-4 capitalize text-link underline-offset-2 sm:block sm:py-0 sm:hover:underline"
+			class="block py-4 capitalize text-link underline-offset-2 sm:py-0 sm:hover:underline"
 			data-astro-prefetch
 		>
 			جستجو
