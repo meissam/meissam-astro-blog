@@ -1,17 +1,11 @@
 import type { SiteConfig } from "@/types";
 
-export enum Categories {
-	Playground = "playground",
-	Code = "code",
-	Thoughts = "thoughts",
-}
-
 export const siteConfig: SiteConfig = {
 	// Used as both a meta property (src/components/BaseHead.astro L:31 + L:49)
-	author: "Meissam Rasouli",
+	author: "وبلاگ میثم رسولی",
 	// Date.prototype.toLocaleDateString() parameters, found in src/utils/date.ts.
 	date: {
-		locale: "en-GB",
+		locale: "fa-IR",
 		options: {
 			day: "numeric",
 			month: "short",
@@ -19,53 +13,25 @@ export const siteConfig: SiteConfig = {
 		},
 	},
 	// Used as the default description meta property and webmanifest description
-	description: "Meissam Rasouli's Personal Blog",
+	description: "وبلاگ میثم رسولی",
 	// HTML lang property, found in src/layouts/Base.astro L:18 & astro.config.ts L:48
-	lang: "en-GB",
+	lang: "fa",
 	// Meta property, found in src/components/BaseHead.astro L:42
-	ogLocale: "en_GB",
+	ogLocale: "fa_IR",
 	// Option to sort posts by updatedDate if set to true (if property exists). Default (false) will sort by publishDate
 	sortPostsByUpdatedDate: false,
 	// Used to construct the meta title property found in src/components/BaseHead.astro L:11, and webmanifest name found in astro.config.ts L:42
-	title: "Meissam Rasouli's Personal blog",
+	title: "وبلاگ میثم رسولی",
 };
 
 // Used to generate links in both the Header & Footer.
 export const menuLinks: { path: string; title: string }[] = [
 	{
-		title: Categories.Playground,
-		path: "/categories/playground/",
-	},
-	{
-		title: Categories.Code,
-		path: "/categories/code/",
-	},
-	{
-		title: Categories.Thoughts,
-		path: "/categories/thoughts/",
-	},
-];
-
-// Used to generate links in both the Header & Footer.
-export const footerLinks: { path: string; title: string }[] = [
-	{
 		path: "/",
-		title: "Home",
+		title: "خانه",
 	},
 	{
 		path: "/about/",
-		title: "About",
-	},
-	{
-		path: "/posts/",
-		title: "Archive",
-	},
-	{
-		title: "Tags",
-		path: "/tags/",
-	},
-	{
-		title: "RSS",
-		path: "/rss.xml",
+		title: "درباره من",
 	},
 ];

@@ -25,7 +25,7 @@ export default {
 					"@apply underline underline-offset-2": {},
 				},
 				".title": {
-					"@apply text-2xl font-semibold text-accent-2": {},
+					"@apply text-2xl font-semibold text-accent": {},
 				},
 			});
 		}),
@@ -34,24 +34,16 @@ export default {
 		extend: {
 			colors: {
 				accent: "hsl(var(--theme-accent) / <alpha-value>)",
-				"accent-2": "hsl(var(--theme-accent-2) / <alpha-value>)",
 				bgColor: "hsl(var(--theme-bg) / <alpha-value>)",
 				link: "hsl(var(--theme-link) / <alpha-value>)",
 				quote: "hsl(var(--theme-quote) / <alpha-value>)",
 				textColor: "hsl(var(--theme-text) / <alpha-value>)",
+				header: "hsl(var(--header-bg) / <alpha-value>)",
 			},
 			fontFamily: {
 				// Add any custom fonts here
-				sans: [
-					"-apple-system",
-					"BlinkMacSystemFont",
-					"Segoe UI",
-					"Roboto",
-					"Helvetica",
-					"Arial",
-					"sans-serif",
-				],
-				serif: ["Georgia", "Cambria", "Times New Roman", "serif"],
+				sans: ["Sahel"],
+				serif: ["Sahel"],
 			},
 			transitionProperty: {
 				height: "height",
@@ -125,12 +117,36 @@ export default {
 						"--tw-prose-body": theme("colors.textColor / 1"),
 						"--tw-prose-bold": theme("colors.textColor / 1"),
 						"--tw-prose-bullets": theme("colors.textColor / 1"),
-						"--tw-prose-code": theme("colors.textColor / 1"),
-						"--tw-prose-headings": theme("colors.accent-2 / 1"),
+						"--tw-prose-headings": theme("colors.accent / 1"),
 						"--tw-prose-hr": "0.5px dashed #666",
 						"--tw-prose-links": theme("colors.textColor / 1"),
 						"--tw-prose-quotes": theme("colors.quote / 1"),
 						"--tw-prose-th-borders": "#666",
+
+						blockquote: {
+							marginTop: "2rem",
+							marginBottom: "2rem",
+							paddingRight: "1.25rem",
+							borderRight: "3px solid hsl(var(--theme-quote))",
+							fontStyle: "italic",
+							color: "hsl(var(--theme-quote))",
+							textAlign: "right",
+						},
+						"blockquote p:first-of-type::before": {
+							content: '"“"',
+							marginLeft: "0.25rem",
+						},
+						"blockquote p:last-of-type::after": {
+							content: '"”"',
+							marginRight: "0.25rem",
+						},
+
+						p: {
+							textAlign: "justify",
+						},
+						li: {
+							textAlign: "justify",
+						},
 					},
 				},
 				sm: {

@@ -8,17 +8,6 @@ export async function getAllPosts() {
 	});
 }
 
-/** filter out draft posts based on the environment and filter posts by category */
-export async function getPostsByCategory(category: string) {
-  return await getCollection("post", ({ data }) => {
-      const isProd = import.meta.env.PROD;
-      const isDraft = data.draft;
-      const isCategoryMatch = data.categories.includes(category);
-
-      return (isProd ? !isDraft : true) && isCategoryMatch;
-  });
-}
-
 /** returns the date of the post based on option in siteConfig.sortPostsByUpdatedDate */
 export function getPostSortDate(post: CollectionEntry<"post">) {
 	return siteConfig.sortPostsByUpdatedDate && post.data.updatedDate !== undefined
@@ -69,33 +58,6 @@ export function getUniqueTags(posts: CollectionEntry<"post">[]) {
 export function getUniqueTagsWithCount(posts: CollectionEntry<"post">[]): [string, number][] {
 	return [
 		...getAllTags(posts).reduce(
-			(acc, t) => acc.set(t, (acc.get(t) ?? 0) + 1),
-			new Map<string, number>(),
-		),
-	].sort((a, b) => b[1] - a[1]);
-}
-
-
-/** returns all tags created from posts (inc duplicate tags)
- *  Note: This function doesn't filter draft posts, pass it the result of getAllPosts above to do so.
- *  */
-export function getAllCategories(posts: CollectionEntry<"post">[]) {
-	return posts.flatMap((post) => [...post.data.categories]);
-}
-
-/** returns all unique tags created from posts
- *  Note: This function doesn't filter draft posts, pass it the result of getAllPosts above to do so.
- *  */
-export function getUniqueCategories(posts: CollectionEntry<"post">[]) {
-	return [...new Set(getAllCategories(posts))];
-}
-
-/** returns a count of each unique tag - [[tagName, count], ...]
- *  Note: This function doesn't filter draft posts, pass it the result of getAllPosts above to do so.
- *  */
-export function getUniqueCategoriesWithCount(posts: CollectionEntry<"post">[]): [string, number][] {
-	return [
-		...getAllCategories(posts).reduce(
 			(acc, t) => acc.set(t, (acc.get(t) ?? 0) + 1),
 			new Map<string, number>(),
 		),
